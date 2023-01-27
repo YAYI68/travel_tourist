@@ -17,7 +17,7 @@ export const About = () => {
           <p className='text-[1.5rem]'>Category</p>
           <h3 className='font-volkhov text-[2.5rem] lg:text-[2rem]'>We Offer Best Services</h3>
         </div>
-        <div className='flex justify-between relative w-full'>
+        <div className='flex justify-between lg:flex-wrap relative w-full  md:flex-col'>
             {AboutCategory.map((category,i)=>(
                 <Category 
                   title={category.title}
@@ -25,8 +25,6 @@ export const About = () => {
                   description={category.description}
                 />
             ))}
-           
-           
             <div className='absolute left-[25%] z-[-10] rounded-br-[.5rem] rounded-tl-[2rem] translate-y-1/2 -translate-x-1/2  h-[5rem] w-[5rem] bottom-0 bg-[#DF6951]'></div>
         </div>
     </section>

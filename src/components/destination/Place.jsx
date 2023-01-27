@@ -4,7 +4,7 @@ import Place1 from "../../assets/images/place1.png"
 
 export const Place = ({location,image,duration,price}) => {
   return (
-    <div className='flex flex-col items-center shadow-md overflow-hidden rounded-lg h-[27rem] w-[30%]'>
+    <div className='flex flex-col items-center shadow-md overflow-hidden rounded-lg h-[27rem] w-[30%] md:w-[90%]'>
       <div className='w-full h-[75%]'>
         <img src={image} alt="location" className='h-full w-full' />
       </div>

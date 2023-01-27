@@ -17,7 +17,7 @@ function MainNavbar() {
   const {inView,headerRef } = useStateContext()
 
   return (
-    <nav className={`${!inView && 'fixed z-10 bg-[#F1A501]'} w-full h-[10%]  flex flex-col items-center justify-center  lg:hidden`} ref={headerRef}>
+    <nav className={`${!inView && 'fixed z-10 bg-[#F1A501]'} w-full h-[10%] py-2 flex flex-col items-center justify-center  lg:hidden`} ref={headerRef}>
        
         <div className='w-[80%] h-[3rem]  flex items-center justify-between'>
           <div className='w-[20%]'>

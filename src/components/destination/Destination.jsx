@@ -12,7 +12,7 @@ export const Destination = () => {
           <p className='text-[1.5rem]'>Top Selling</p>
           <h3 className='font-volkhov text-[2.5rem]'>Top Destinations</h3>
         </div>
-        <div className='flex w-full justify-between mt-[2rem] relative'>
+        <div className='flex md:gap-4 md:flex-col w-full justify-between mt-[2rem] relative'>
         <div className='top-10 z-[-5] right-0 absolute h-[10rem] w-[7rem]  translate-x-1/2 '>
          <img src={Wire} alt="" />     
         </div>
