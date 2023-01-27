@@ -22,8 +22,8 @@ export const Testimonies = () => {
      <section className='w-[80%] mb-[5rem] mt-[6rem] flex'>
        <div className='w-[45%] h-[20rem] flex flex-col gap-10'>
         <div className='w-[80%]'>     
-        <p className='text-[1.5rem] font-semibold text-gray-500'>Testiomonies</p>
-        <h3 className='text-[3.5rem] font-volkhov font-semibold'>What people say about Us.</h3>
+        <p className='text-[1.5rem] lg:text-[1.2rem] font-semibold text-gray-500'>Testiomonies</p>
+        <h3 className='text-[3.5rem] lg:text-[2rem] font-volkhov font-semibold'>What people say about Us.</h3>
         </div>
         <div className='flex gap-5'>
           <Indicator active />  

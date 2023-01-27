@@ -9,8 +9,8 @@ export const Bookings = () => {
     <section className='flex my-[3rem] w-[80%]'>
         <div className='w-[50%]'>
             <div>
-               <p className='text-[1.5rem] '>Easy and Fast</p>
-               <h2 className='text-[3.5rem] font-volkhov'>Book Your Next Trip In 3 Easy Steps</h2> 
+               <p className='text-[1.5rem] lg:text-[1rem] '>Easy and Fast</p>
+               <h2 className='text-[3.5rem] lg:text-[2rem] font-volkhov'>Book Your Next Trip In 3 Easy Steps</h2> 
             </div>
             <div className='flex flex-col gap-4'>
                 {BookSteps.map((step,i)=>(

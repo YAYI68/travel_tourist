@@ -10,14 +10,14 @@ import MosqueImg from "../../assets/images/mosques.png"
 
 export const BookingCard = () => {
   return (
-    <div className='w-[60%] p-4 h-[90%] rounded-lg absolute bg-white shadow-2xl top-20 right-[6rem] '>
+    <div className='w-[60%] lg:w-[80%] p-4 h-[90%] lg:h-full rounded-lg absolute bg-white shadow-2xl top-20 right-[6rem] '>
        <div className=' flex flex-col gap-3 w-full h-full rounded-lg'>
           <div className='w-full h-[50%] overflow-hidden'>
              <img src={BookingImage} alt="" className='h-full w-full' />
           </div>
           <div className='w-full h-[60%] relative flex flex-col justify-between'>
-              <p className='font-semibold text-[1.5rem]'>Trip To Greece</p>
-               <div className='text-[#84829A] flex gap-4 items-center'>
+              <p className='font-semibold text-[1.5rem] lg:text-[1.2rem]'>Trip To Greece</p>
+               <div className='text-[#84829A] flex gap-4 items-center lg:text-[.8rem]'>
                 <p>14-29 June |</p>
                 <p> by Robbin joseph</p>
                </div>
@@ -37,7 +37,7 @@ export const BookingCard = () => {
                  <button type="" className='h-[2rem]  hover:shadow-md w-[2rem] rounded-[50%] flex items-center justify-center'>
                     <img src={BuildingIcon} alt="" />
                 </button>
-                <p className='text-[.9rem]'>24 people going</p>
+                <p className='text-[.9rem] lg:text-[.7rem]'>24 people going</p>
                  </div>
 
                  <button className='h-[2rem] w-[2rem]'>
@@ -48,13 +48,13 @@ export const BookingCard = () => {
 
                </div>
                <div className='absolute flex gap-2 p-2 rounded-lg right-[-7rem] top-12 bg-white h-[60%] w-[70%] z-[5] shadow-md'>
-                  <div className='h-[3rem] w-[3rem] rounded-[50%] overflow-hidden '>
+                  <div className='h-[3rem] w-[3rem] lg:h-[2rem] lg:w-[2rem] rounded-[50%] overflow-hidden '>
                      <img src={MosqueImg} alt="" />
                   </div>
                   <div className='flex flex-col w-[80%] gap-1'>
-                     <p className='text-[#84829A] text-[.8rem]'>On going</p>
-                     <p className='font-semibold'>Trip to rome</p>
-                     <p className='text-[.8rem] font-semibold'> <span className='text-[#8A79DF]'>40%</span> Completed</p>
+                     <p className='text-[#84829A] text-[.8rem] lg:text-[.6rem]'>On going</p>
+                     <p className='font-semibold lg:text-[.8rem]'>Trip to rome</p>
+                     <p className='text-[.8rem] lg:text-[.6rem] font-semibold'> <span className='text-[#8A79DF]'>40%</span> Completed</p>
                      <div className='w-full h-[.5rem] rounded-md bg-[#F5F5F5]'>
                        <div className='w-[40%] bg-[#8A79DF] rounded-md h-full'></div> 
                      </div>
