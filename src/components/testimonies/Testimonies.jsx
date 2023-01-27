@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { SideScroll } from './SideScroll'
 import { TestimonyCard } from './TestimonyCard'
 

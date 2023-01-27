@@ -1,4 +1,4 @@
-import React from 'react';
+
 import TestimonyPic from "../../assets/images/testimonypic.png"
 
 export const TestimonyCard = ({bottom,right,zIndex}) => {
