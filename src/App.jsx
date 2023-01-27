@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <div className="w-full">
+    <div className="w-screen">
         <Header />
        <main className='mt-[5rem] w-screen flex flex-col items-center'>
          <About />
