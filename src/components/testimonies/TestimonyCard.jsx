@@ -9,7 +9,7 @@ export const TestimonyCard = ({bottom,right,zIndex}) => {
         right: right,
         zIndex: zIndex,
     }}
-    className='bg-white shadow-xl rounded-md w-[70%] h-[70%] absolute  right-2'>
+    className='bg-white shadow-xl rounded-md w-[70%] h-[15rem] absolute  right-2'>
         <div className='relative w-full h-full p-6 flex flex-col justify-between '>
             <div className="absolute h-[3.5rem] top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[3.5rem] ">
                 <img src={TestimonyPic} alt="" className='h-full  w-full' />

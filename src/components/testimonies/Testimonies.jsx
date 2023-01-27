@@ -19,8 +19,8 @@ const Indicator = ({active})=>{
 
 export const Testimonies = () => {
   return (
-     <section className='w-[80%] mb-[5rem] mt-[6rem] flex'>
-       <div className='w-[45%] h-[20rem] flex flex-col gap-10'>
+     <section className='w-[80%] my-[7rem] bg-red-700 flex'>
+       <div className='w-[45%]  flex flex-col gap-10'>
         <div className='w-[80%]'>     
         <p className='text-[1.5rem] lg:text-[1.2rem] font-semibold text-gray-500'>Testiomonies</p>
         <h3 className='text-[3.5rem] lg:text-[2rem] font-volkhov font-semibold'>What people say about Us.</h3>
@@ -31,7 +31,7 @@ export const Testimonies = () => {
           <Indicator />  
         </div>
        </div>
-       <div className='relative w-[65%] h-[20rem] '>
+       <div className='relative w-[65%] md:w-[90%] '>
          <SideScroll />
          <TestimonyCard
           bottom={'5rem'}

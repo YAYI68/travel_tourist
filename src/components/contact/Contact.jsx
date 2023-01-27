@@ -4,12 +4,12 @@ import MultiPlus2 from "../../assets/images/mult_plus2.png"
 
 export const Contact = () => {
   return (
-    <section className='mt-[4rem] w-[80%] relative'>
-       <div className='py-[2rem] flex flex-col gap-[5rem] items-center bg-[#DFD7F9]  rounded-tl-[8rem]'>
+    <section className='mt-[4rem] w-[80%] relative md:w-[90%]'>
+       <div className='py-[2rem] flex flex-col gap-[5rem] md:gap-4 items-center bg-[#DFD7F9]  rounded-tl-[8rem]'>
         <div className='w-[70%] font-medium'>    
           <h3 className='text-[2rem] text-center lg:text-[1.5rem] md:text-[1.2rem] text-[#5E6282]'>Subscribe to get information, latest news and other interesting offers about Jadoo</h3>
         </div>
-       <div className='h-[3.5rem] lg:h-[2.5rem] w-[60%] flex gap-5 items-center '>
+       <div className='h-[3.5rem] lg:h-[2.5rem] w-[60%] flex gap-5 md:gap-2 items-center md:flex-col md:w-[80%] '>
         <div className='w-[60%] flex items-center gap-2 px-6 py-2 h-full rounded bg-white'>
             <div className='h-full flex items-center justify-center w-[2.5rem] '>
             <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
