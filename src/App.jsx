@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import { About } from './components/about/About'
 import { Bookings } from './components/booking/Bookings'
 import { Brand } from './components/brand/Brand'
