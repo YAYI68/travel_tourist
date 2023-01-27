@@ -1,21 +1,25 @@
 import React from 'react'
 import TravellerImage from "../../assets/images/Traveller.png"
 import Plane from "../../assets/images/plane.png"
+import Decore from "../../assets/images/Decore2.png"
 import { RectButton } from '../ui/RectButton'
 import { RoundButton } from '../ui/RoundButton'
 
 export const HeaderComponent = () => {
   return (
-    <div className='w-[80%] h-[95vh] flex md:flex-col  lg:mb-[3rem]'>
-      <div className='w-[50%] h-[90%] pt-[5rem]'>
-        <div className='w-[80%] h-full  flex flex-col gap-3 items-center'>
-            <p className='text-[1.2rem] font-[700] text-secondary-500'>Best Destinations around the world</p>
+    <div className='w-[80%] h-[95vh] flex md:flex-col  lg:mb-[3rem] md:[95%]'>
+      <div className='w-[50%] h-[90%] md:h-full pt-[5rem] md:w-[90%]'>
+        <div className='w-[80%] h-full  flex flex-col gap-3 items-center md:w-full'>
+            <p className='text-[1.5rem] font-[700] text-secondary-500'>Best Destinations around the world</p>
            <div className='w-full'>
-           <h2 className='text-[4rem] font-volkhov w-full lg:text[2.5rem]'>Travel,<span className=''>enjoy</span> and live a new and full life </h2> 
+           <h2 className='text-[4rem] font-volkhov w-full lg:text-[2rem] flex '>Travel,<span className='flex flex-col'> <span>enjoy</span> <span className='w-full h-[1.5rem'>
+          <img src={Decore} alt="" className='h-full' />
+           </span>  </span> </h2>
+           <h2 className='text-[4rem] font-volkhov w-full lg:text-[2rem]'>and live a new and full life</h2> 
            </div>
-           <p className='text-[1.1rem]'>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+           <p className='text-[1.1rem] md:text-[.8rem]'>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
            <div className='w-full'>
-            <div className='w-[80%] flex gap-3 items-center '>
+            <div className='w-[80%] flex gap-3 items-center md:w-full '>
              <div className=''>
                 <RectButton text={'Find out more'} bgColor='#F1A501' />
              </div>
@@ -34,10 +38,10 @@ export const HeaderComponent = () => {
         </div>        
       </div>
       <div className='w-[50%] h-full relative'>
-        <div className='absolute top-10 left-[5rem]'>
+        <div className='absolute top-10 left-[5rem] md:left-0 md:top-[-5rem] md:h-[4rem] md:w-[4rem]'>
             <img src={Plane} alt="" />
         </div>
-        <div className='absolute top-[10rem] right-0 translate-x-[5rem]'>
+        <div className='absolute top-[10rem] right-0 translate-x-[5rem] md:top-[-25rem] md:h-[4rem] md:w-[4rem]'>
             <img src={Plane} alt="" />
         </div>
         <img src={TravellerImage} alt="Traveller" className='h-full w-full' />
