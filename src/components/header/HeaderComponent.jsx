@@ -6,7 +6,7 @@ import { RoundButton } from '../ui/RoundButton'
 
 export const HeaderComponent = () => {
   return (
-    <div className='w-full h-[90%] flex md:flex-col  lg:mb-[3rem]'>
+    <div className='w-[80%] h-[95vh] flex md:flex-col  lg:mb-[3rem]'>
       <div className='w-[50%] h-[90%] pt-[5rem]'>
         <div className='w-[80%] h-full  flex flex-col gap-3 items-center'>
             <p className='text-[1.2rem] font-[700] text-secondary-500'>Best Destinations around the world</p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoChevronDownOutline } from "react-icons/io5";
 import Logo from "../../assets/Jadoo.svg"
+import { useStateContext } from '../../context/ContextProvider';
 import { links } from '../../data'
 
 
@@ -13,9 +14,12 @@ import { links } from '../../data'
   }
   
 function MainNavbar() {
+  const {inView,headerRef } = useStateContext()
+
   return (
-    <nav className='w-full h-[10%]  flex flex-col items-center justify-center  lg:hidden'>
-        <div className='w-full h-[3rem]  flex items-center justify-between'>
+    <nav className={`${!inView && 'fixed z-10 bg-[#F1A501]'} w-full h-[10%]  flex flex-col items-center justify-center  lg:hidden`} ref={headerRef}>
+       
+        <div className='w-[80%] h-[3rem]  flex items-center justify-between'>
           <div className='w-[20%]'>
             <img src={Logo} alt="" />
           </div>
