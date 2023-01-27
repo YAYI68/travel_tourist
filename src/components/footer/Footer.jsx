@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 export const Footer = () => {
   return (
    <footer className='mt-[5rem] w-screen flex flex-col items-center'>
-      <div className='w-[80%]  flex justify-between '>
+      <div className='w-[80%]  flex justify-between lg:w-full '>
         <div className='w-[20%] p-4 gap-4 flex flex-col'>
           <h3 className='text-[3rem] font-semibold'>Jadoo.</h3>
           <p className=''>Book your trip in minute, get full Control for much longer.</p>
