@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoChevronDownOutline } from "react-icons/io5";
-import Logo from "../../assets/Jadoo.svg"
+import Logo from "../../assets/Logo.svg"
 import { useStateContext } from '../../context/ContextProvider';
 import { links } from '../../data'
 
@@ -17,7 +17,7 @@ function MainNavbar() {
   const {inView,headerRef } = useStateContext()
 
   return (
-    <nav className={`${!inView && 'fixed z-10 bg-[#F1A501]'} w-full h-[10%] py-2 flex flex-col items-center justify-center  lg:hidden`} ref={headerRef}>
+    <nav className={`${!inView && 'fixed z-10 bg-[#FFF1DA] text-[#DF6951]'} w-full h-[10%] py-2 flex flex-col items-center justify-center  lg:hidden`} ref={headerRef}>
        
         <div className='w-[80%] h-[3rem]  flex items-center justify-between'>
           <div className='w-[20%]'>
@@ -28,7 +28,7 @@ function MainNavbar() {
              <NavLink key={i} url={link.url} name={link.name} />
            ))}
       
-            <li className='group rounded border-2 border-black hover:bg-[#DF6951] px-3 py-2 cursor-pointer'>
+            <li className='group rounded border-2 border-black hover:border-white hover:bg-[#DF6951] px-3 py-2 cursor-pointer'>
                 <a href='' className='group-hover:text-white'>Sign up</a>
             </li>
             <li className='flex items-center cursor-pointer'>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { IoChevronDownOutline } from 'react-icons/io5';
 import { VscThreeBars } from "react-icons/vsc";
-import Logo from "../../assets/Jadoo.svg"
+import Logo from "../../assets/Logo.svg"
 
 
 export const MobileNavbar = () => {
