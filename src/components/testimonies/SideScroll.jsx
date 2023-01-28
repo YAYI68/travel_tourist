@@ -6,7 +6,7 @@ export const SideScroll = ({moveUp,moveDown,current,limit}) => {
 
 
   return (
-    <div className='h-[10rem] absolute right-[-2rem] bottom-5 flex flex-col gap-4 translate-x-1/2'>
+    <div className='h-[10rem] md:w-[50%] md:order-5 absolute right-[-2rem] md:bottom-[10rem] md:right-0 bottom-5 flex flex-col gap-4 translate-x-1/2 md:translate-x-0 md:static'>
        <button 
         disabled={current === 0}
         onClick={moveDown}

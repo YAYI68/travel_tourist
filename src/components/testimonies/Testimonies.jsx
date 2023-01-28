@@ -16,7 +16,7 @@ const Indicator = ({active,click})=>{
             backgroundColor:'#E5E5E5'
           }
          }
-        className='h-[.8rem] w-[.8rem] rounded-[50%] bg-yellow-600'></button>
+        className='h-[.8rem] w-[.8rem] rounded-[50%] bg-yellow-600 md:hidden'></button>
     )
 }
 
@@ -47,10 +47,10 @@ export const Testimonies = () => {
 
 
   return (
-     <section className='w-[80%] my-[5rem]  flex '>
-       <div className='w-[45%]  flex flex-col  gap-10'>
+     <section className='w-[80%] my-[5rem] md:w-full  flex md:flex-col  md:h-[30rem] md:items-center'>
+       <div className='w-[45%]  flex flex-col md:w-full md:items-center gap-10'>
         <div className='w-[80%]'>     
-        <p className='text-[1.5rem] lg:text-[1.2rem] font-semibold text-gray-500'>Testiomonies</p>
+        <p className='text-[1.5rem] lg:text-[1.2rem] font-semibold text-gray-500 md:text-center'>Testiomonies</p>
         <h3 className='text-[3.5rem] lg:text-[2rem] font-volkhov font-semibold'>What people say about Us.</h3>
         </div>
         <div className='flex gap-5'>
@@ -61,22 +61,20 @@ export const Testimonies = () => {
             /> :<Indicator 
                click={()=>moveIndicator(i)}
             />
-          ))}
-        
+          ))}      
         </div>
        </div>
-       <div className='relative w-[65%] md:w-[90%] '>
-         <SideScroll moveUp={scrollUp} moveDown={scrolldown} current={curState} limit={slideLenght}  />
+       <div className='relative w-[65%] md:w-[90%] md:h-[30rem] md:flex md:flex-col md:items-center md:bg-red-500'>
          {TestimonyData.map((item,i)=>(
           <TestimonyCard
           key={i}
           bottom={curState === i? '0':'-5rem'}
-          right={curState === i? '5rem':'2rem'}
+          right={curState === i? '2.5rem':'.5rem'}
           zIndex={curState === i? curState:curState-1}
           data={item}
          />
          ))}
-
+            <SideScroll moveUp={scrollUp} moveDown={scrolldown} current={curState} limit={slideLenght}  />
         </div>
      </section>
   )
