@@ -8,7 +8,13 @@ import Place2 from "./../assets/images/place2.png"
 import Place3 from "./../assets/images/place3.png"
 import Selection from "./../assets/images/selection.png"
 import WaterIcon from "./../assets/images/water.png"
-import CarIcon from "./../assets/images/car.png"
+import CarIcon from "./../assets/images/car.png";
+import Testimony from "./../assets/images/testimonypic.png"
+import Testimony1 from "./../assets/images/testimony1.png"
+import Testimony3 from "./../assets/images/testimony3.png"
+
+
+
 
 export const links = [
     {
@@ -98,4 +104,26 @@ export const BookSteps = [
         title: "Reach Airport on Selected Date",
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.'
     },
+]
+
+
+export const TestimonyData = [
+    {
+        image:Testimony,
+        name:"Mike taylor",
+        position:"Lahore, Pakistan",
+        description:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+    },
+    {
+        image:Testimony1,
+        name:"Yayi Abiodun",
+        position:"CEO, Nigeria",
+        description:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+    },
+    {
+        image:Testimony3,
+        name:"Yayi Abiodun",
+        position:"CEO, Nigeria",
+        description:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+    }
 ]

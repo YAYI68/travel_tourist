@@ -1,4 +1,5 @@
 
+import { TestimonyData } from '../../data'
 import { SideScroll } from './SideScroll'
 import { TestimonyCard } from './TestimonyCard'
 
@@ -33,21 +34,16 @@ export const Testimonies = () => {
        </div>
        <div className='relative w-[65%] md:w-[90%] '>
          <SideScroll />
+         {TestimonyData.map((item,i)=>(
          <TestimonyCard
+         key={i}
           bottom={'0'}
           right={'5rem'}
           zIndex={5}
+          data={item}
          />
-         <TestimonyCard
-          bottom={'-5rem'}
-          right={'.5rem'}
-          zIndex={1}
-         />
-         <TestimonyCard
-          bottom={'-5rem'}
-          right={'.5rem'}
-          zIndex={1}
-         />
+         ))}
+
         </div>
      </section>
   )
