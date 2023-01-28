@@ -20,8 +20,8 @@ function App() {
          <Destination />
          <Bookings />
          <Testimonies />
-         <Brand />
-         <Contact />
+         {/* <Brand /> 
+          <Contact /> */}
        </main>
        <Footer />
     </div>

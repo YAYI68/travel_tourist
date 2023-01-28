@@ -1,12 +1,15 @@
 
+import { useState } from 'react'
 import { TestimonyData } from '../../data'
 import { SideScroll } from './SideScroll'
 import { TestimonyCard } from './TestimonyCard'
 
 
-const Indicator = ({active})=>{
+const Indicator = ({active,click})=>{
+  
  return(
         <button 
+          onClick={click}
           style={active?{
             backgroundColor:'#39425D'
           }:{
@@ -19,6 +22,30 @@ const Indicator = ({active})=>{
 
 
 export const Testimonies = () => {
+  const [curState, setCurState ] = useState(0)
+   
+  const slideLenght = TestimonyData.length
+
+  const scrollUp = ()=>{
+    if(curState >= slideLenght - 1 ){
+      setCurState(0)
+    }else{
+      setCurState(prev=>prev + 1)
+    }
+  }
+
+  const scrolldown = ()=>{
+    if(curState <= 0){
+      setCurState(slideLenght)
+    }
+    setCurState(prev=>prev - 1)
+  }
+
+  const moveIndicator = (index)=>{
+    setCurState(index)
+  }
+
+
   return (
      <section className='w-[80%] my-[5rem]  flex '>
        <div className='w-[45%]  flex flex-col  gap-10'>
@@ -27,19 +54,25 @@ export const Testimonies = () => {
         <h3 className='text-[3.5rem] lg:text-[2rem] font-volkhov font-semibold'>What people say about Us.</h3>
         </div>
         <div className='flex gap-5'>
-          <Indicator active />  
-          <Indicator />  
-          <Indicator />  
+          {TestimonyData.map((_,i)=>(
+            i===curState?<Indicator 
+              active
+              click={()=>moveIndicator(i)}
+            /> :<Indicator 
+               click={()=>moveIndicator(i)}
+            />
+          ))}
+        
         </div>
        </div>
        <div className='relative w-[65%] md:w-[90%] '>
-         <SideScroll />
+         <SideScroll moveUp={scrollUp} moveDown={scrolldown} current={curState} limit={slideLenght}  />
          {TestimonyData.map((item,i)=>(
-         <TestimonyCard
-         key={i}
-          bottom={'0'}
-          right={'5rem'}
-          zIndex={5}
+          <TestimonyCard
+          key={i}
+          bottom={curState === i? '0':'-5rem'}
+          right={curState === i? '5rem':'2rem'}
+          zIndex={curState === i? curState:curState-1}
           data={item}
          />
          ))}

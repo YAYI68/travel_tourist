@@ -122,8 +122,8 @@ export const TestimonyData = [
     },
     {
         image:Testimony3,
-        name:"Yayi Abiodun",
-        position:"CEO, Nigeria",
+        name:"Micheal Otis",
+        position:"Team Lead, China",
         description:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
     }
 ]

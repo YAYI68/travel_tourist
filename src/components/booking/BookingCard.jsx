@@ -10,9 +10,9 @@ import MosqueImg from "../../assets/images/mosques.png"
 
 export const BookingCard = () => {
   return (
-    <div className='w-[60%] lg:w-[80%] p-4 h-[90%] lg:h-full rounded-lg absolute bg-white shadow-2xl top-20 right-[6rem] '>
+    <div className='w-[60%] lg:w-[80%] p-4 h-[90%] lg:h-full rounded-lg absolute md:static bg-white shadow-2xl top-20 right-[6rem] md:h-[20rem] '>
        <div className=' flex flex-col gap-3 w-full h-full rounded-lg'>
-          <div className='w-full h-[50%] overflow-hidden'>
+          <div className='w-full h-[50%] overflow-hidden rounded-lg'>
              <img src={BookingImage} alt="" className='h-full w-full' />
           </div>
           <div className='w-full h-[60%] relative flex flex-col justify-between'>
@@ -47,7 +47,7 @@ export const BookingCard = () => {
                  </button>
 
                </div>
-               <div className='absolute flex gap-2 p-2 rounded-lg right-[-7rem] top-12 bg-white h-[60%] w-[70%] z-[5] shadow-md'>
+               <div className='absolute flex gap-2 p-2 rounded-lg right-[-7rem] md:right-[-3.5rem] md:top-4 top-12 bg-white h-[60%] md:w-[50%] md:[70%] w-[70%] z-[5] shadow-md'>
                   <div className='h-[3rem] w-[3rem] lg:h-[2rem] lg:w-[2rem] rounded-[50%] overflow-hidden '>
                      <img src={MosqueImg} alt="" />
                   </div>
